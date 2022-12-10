@@ -1,5 +1,6 @@
 import React from 'react';
 import banner from '../../assets/images/engineeringBanner.png';
+import rightArrow from '../../assets/images/icon/navigation/backArrow.svg';
 const Banner = () => {
     return (
       <div>
@@ -14,6 +15,17 @@ const Banner = () => {
             className="mask"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.6)", height: "100%" }}
           >
+            <div className="d-md-none d-flex justify-content-between mx-5 pt-5">
+              <img src={rightArrow} alt="" />
+              <button
+                className="btn text-white border"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalBox"
+              >
+                Join Group
+              </button>
+            </div>
             <div
               className="d-flex position-absolute"
               style={{ bottom: "50px", left: "20%" }}
@@ -27,8 +39,6 @@ const Banner = () => {
             </div>
           </div>
         </div>
-
-       
       </div>
     );
 };

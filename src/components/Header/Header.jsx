@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import logo from "../../assets/images/whole.png";
 import Hdown from "../../assets/images/icon/Hdown.svg";
+import logo from "../../assets/images/whole.png";
 
 const Header = () => {
     return (
@@ -37,7 +37,13 @@ const Header = () => {
           </div>
           <span className=" h5 fw-bold">
             Create account.
-            <Link className="text-primary fw-bold text-decoration-none" to="/">
+            <Link
+              className="text-primary fw-bold text-decoration-none"
+              to="/"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#modalBox2"
+            >
               It's free! <img src={Hdown} alt="" />
             </Link>
           </span>

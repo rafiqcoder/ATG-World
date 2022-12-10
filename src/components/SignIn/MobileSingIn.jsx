@@ -5,7 +5,7 @@ import f_logo from "../../assets/images/icon/f_logo.svg";
 import g_logo from "../../assets/images/icon/g_logo.svg";
 import close from "../../assets/images/icon/Vector.svg";
 import './SignIn.css';
-const SignIn = () => {
+const MobileSignIn = () => {
   return (
     <div
       className="modal fade"
@@ -140,4 +140,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default MobileSignIn;

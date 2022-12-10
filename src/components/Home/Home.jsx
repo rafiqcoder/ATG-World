@@ -4,20 +4,24 @@ import React from 'react';
  import alert from "../../assets/images/icon/alert.svg";
 import Banner from '../Banner/Banner';
 import group from "../../assets/images/icon/navigation/Vector.png";
+
 import downArrow from "../../assets/images/icon/navigation/downArrow.png";
 import PostCard from '../PostCard/PostCard';
 
 import articleIcon from "../../assets/images/icon/Article.svg";
 import EduIcon from "../../assets/images/icon/Education.svg";
 
+
 import article from "../../assets/images/article.png";
 import eduImg from "../../assets/images/education.png";
+
 
 import sarthak from "../../assets/images/sarthak.png";
 import sarah from "../../assets/images/sarah.png";
 import EventCard from '../EventCard/EventCard';
 import JobCard from '../JobCard/JobCard';
 import SignIn from '../SignIn/SignIn';
+import SignUp from '../SignUp/SignUp';
 const Home = () => {
 
   const postdata = [
@@ -101,21 +105,21 @@ const Home = () => {
                     Write a post <img className="ms-1" src={downArrow} alt="" />
                   </button>
                   <button
-                    onClick={handleEdit}
+                   
                     className="btn btn-primary"
-                    // type="button"
-                    // data-bs-toggle="modal"
-                    // data-bs-target="#staticBackdrop"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalBox"
                   >
                     <img src={group} alt="" /> Join Group
                   </button>
 
-                  <div id="popup" className="d-none w-100 custoStyle" >
+                  {/* <div id="popup" className="d-none w-100 custoStyle" >
                     <div
                       className=""
                       
-                    />
-                    <div className="mx-auto container">
+                    /> */}
+                  {/* <div className="mx-auto container">
                       <div className="">
                         <div className="bg-white shadow  overflow-y-auto w-100">
                           <div className="">
@@ -134,8 +138,8 @@ const Home = () => {
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
+                    </div> */}
+                  {/* </div> */}
                 </div>
               </div>
             </div>
@@ -175,30 +179,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-
-        {/* <div
-          className="modal fade"
-          id="staticBackdrop"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="staticBackdropLabel"
-          aria-hidden="true"
-        >
-          <div className="bg-white" style={{width:'600px', right:'0',height:'400px', zIndex:'9999'}}>
-            <div className="">
-              <div className="modal-header">
-                <button
-                  type="button"
-                  className="btn-close text-white"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <SignIn></SignIn>
-            </div>
-          </div>
-        </div> */}
+        <SignIn></SignIn>
+        <SignUp></SignUp>
+        
       </div>
     );
 };
